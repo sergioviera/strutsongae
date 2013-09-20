@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/freemarker-2.3.19.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jetty-util-6.1.14.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/ognl-3.0.5.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/openid4java.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/struts2-core-2.3.4.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/urlrewrite-3.2.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-3.3.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/xwork-core-2.3.4.jar" sourcepath="C:/Users/Sergio/.m2/repository/org/apache/struts/xwork/xwork-core/2.3.4/xwork-core-2.3.4-sources.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/json-20080701.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/javassist-3.11.0.GA.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-commons-3.3.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/asm-tree-3.3.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/struts2-json-plugin-2.3.4.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/socialauth-2.2.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

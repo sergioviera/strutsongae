@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite3.2.dtd">
+    <!--
+        Configuration file for UrlRewriteFilter http://tuckey.org/urlrewrite/
+    -->
+<urlrewrite>
+
+	<rule>
+        <name>edit news</name>
+        <from>^/admin/item/([a-zA-Z0-9\-]+)$</from>
+        <to>/admin/news?action=get&amp;id=$1</to>        
+    </rule>
+
+	<rule>
+        <name>edit ads</name>
+        <from>^/admin/ads/([a-zA-Z0-9\-]+)$</from>
+        <to>/admin/adsItem?action=get&amp;id=$1</to>        
+    </rule>
+
+	<rule>
+        <name>View Profile</name>
+        <from>^/profile/([a-zA-Z0-9\-]+)$</from>
+        <to>/viewProfile?id=$1</to>        
+    </rule>
+
+</urlrewrite>

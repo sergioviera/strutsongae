@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+
+	<constant name="struts.custom.i18n.resources" value="messages"/>
+	<constant name="struts.action.excludePattern" value="/_ah/.*?,.*.jsp,.*.html"/>
+    
+    <package name="default" extends="struts-default">
+        <action name="" class="ar.sviera.action.Login" >
+            <result name="success">/index.jsp</result>
+        </action>
+
+        <action name="login" class="ar.sviera.action.Login" method="login" >
+            <result name="success" type="redirect">
+            	<param name="location">${socialURL}</param>
+            </result>
+        </action>        
+
+        <action name="doSetSocialUser" class="ar.sviera.action.Login" method="loadSocialUser">
+            <result name="success" type="redirect">
+            	<param name="location">/</param>
+            </result>
+        </action>
+
+        <action name="logout" class="ar.sviera.action.Login" method="logout" >
+            <result name="success" type="redirect">
+            	<param name="location">/</param>
+            </result>
+        </action>        
+
+		<action name="doSaveIndecPrice" class="ar.sviera.action.ProductAction">
+			<result name="success">index.html</result>
+	        <result name="error">/error.html</result>
+	    </action>   
+
+    </package>
+    
+    <package name="jsonstruts2" extends="json-default">
+    	<!-- ajax json calls -->
+		<action name="doGetNearPrices" class="ar.sviera.action.ProductAction" method="getProductPrices">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>
